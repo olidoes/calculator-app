@@ -3,11 +3,25 @@ body {
     margin: 0;
     padding: 0;
 }
-.calculator-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 0.8fr);
+
+.container {
+    background: black;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
-.number-grid {
+.calculator-container {
+    background-color: green;
+    display: grid;
+    width: 30vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 0.8fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.number-grid:nth-child(10) {
+    grid-column: 2;
 }
