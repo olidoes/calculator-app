@@ -1,2 +1,13 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
 .calculator-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 0.8fr);
+}
+
+.number-grid {
 }
